@@ -1,0 +1,267 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body{
+  font-family: 'Poppins'
+}
+
+.navigation {
+  height: $nav-height;
+  // background: $nav-background;
+  background-color: transparent;
+}
+
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+.container{
+  margin: auto;
+}
+
+.shape1{
+  position: absolute;
+  right: -5%;
+}
+
+
+.brand {
+  position: absolute;
+  // padding-left: 20px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  
+  &:hover{
+    
+  }
+
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}
+
+nav {
+  float: right;
+  ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    li {
+      float: left;
+      position: relative;
+      a {
+        display: block;
+        padding: .625rem 2.9rem 0 0;
+        line-height: 50px;
+        // background: $nav-background;
+        color: $nav-font-color;
+        text-decoration: none;
+        z-index: 9999;
+        
+         &::before {
+           transition: 300ms;
+           height: 5px;
+           content: "";
+           position: absolute;
+           background-color: $link-hover-color;
+           width: 0%;
+           bottom: 0px;
+        }
+
+        &:hover::before{
+          width: 70%;
+        }
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾';
+        }
+      } // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          // padding: 15px;
+          // line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .nav-mobile {
+    display: block;
+  }
+  .shape1{
+    display: none;
+  }
+  nav {
+      width: 100%;
+      padding: $nav-height 0 15px;
+    ul {
+      display: none;
+      z-index: 5;
+      
+      li{
+        float: none;
+        display: flex;
+        justify-content: center;
+        a {
+          padding: 15px;
+          line-height: 20px;
+          &:hover::before{
+            width: 20%;
+          }
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+.picture-z{
+  z-index: 2;
+  background-color: transparent;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $link-hover-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+a{
+  z-index: 19;
+}
+li{
+  background-color: transparent;
+}
+.nav-list{
+  ul{
+    li{
+      background-color: transparent;
+      a{
+        z-index: 999999;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.navigation{
+  background-color: transparent;
+}
+.svg{
+  position: absolute;
+  background-color: red($color: #000000);
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+ 
+}
+
+// sign up button
+.btn-type{
+  width: 6.3125rem;
+  height: 2.5125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid $nav-font-color;
+  background-color: transparent;
+  >a{
+    padding: 5px;
+  }
+  &:hover{
+    background-color: $link-hover-color;
+    a{
+      background-color: $link-hover-color;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

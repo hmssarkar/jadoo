@@ -1,0 +1,134 @@
+b{
+    font-weight: 700;
+}
+.footer-box{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    margin-top: 10rem;
+    // margin-bottom: 5rem;
+    // padding-bottom: 5rem;
+    .footer-logo-box{
+        p{
+            font-size: 0.8rem;
+            margin-top: 2rem;
+        }
+    }
+    .footer-ul-box{
+        ul{
+            margin-top: 2.7rem;
+            li{
+                list-style-type: none;
+                margin-top: 1rem;
+                a{
+                    text-decoration: none;
+                    color: #666a87;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+    }
+}
+.footer-text{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    p{
+        font-size: 1.125rem;
+        
+    }
+}
+.footer-copyright-text{
+    font-size: 1rem;
+    text-align: center;
+    margin: 5.25rem 0 5.25rem 0;
+
+}
+.footer-icon-box{
+    display: flex;
+    gap: 1rem;
+    .footer-icon{
+        width: 3rem;
+        height: 3rem;
+        background-color: $nav-background;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #b9b3b3;
+        -webkit-box-shadow: 9px 5px 4px 0px rgba(199,193,199,1);
+        -moz-box-shadow: 9px 5px 4px 0px rgba(199,193,199,1);
+        box-shadow: 9px 5px 4px 0px rgb(233, 231, 233);
+        
+        &:hover{
+            background-color: #cf63dd;
+            transition: .5s;
+        }
+        
+        i{
+            // color: $nav-background;
+            font-size: 1.5rem;
+            color: $dark-text;
+        }
+        
+    }
+    // .active{
+    //     background-color: #cf63dd;
+    // }
+  
+}
+.footer-text{
+    p{
+      margin-top: 1rem;
+    }
+  }
+.footer-box-last{
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    button{
+       
+        i{
+            color: $nav-background;
+
+        }
+        .para{
+            font-size: 0.5rem;
+            color: $nav-background;
+        }
+    }
+}
+
+
+@media screen and (max-width: $breakpoint) {
+    .footer-box{
+        grid-template-columns:2fr 2fr ;
+        // display: block;
+        // margin: auto;
+        // width: 100%;
+        width: 100vw;
+        .footer-logo-box{
+            margin: auto;
+            text-align: center;
+        }
+        .footer-ul-box{
+            margin: auto;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        
+       .footer-icon-box{
+        margin: auto;
+        margin-top: 1rem;
+        // padding-left: 5rem;
+        justify-content: center;
+        // display: block;
+        // border: 1px solid red;
+       }
+    }
+
+    
+}

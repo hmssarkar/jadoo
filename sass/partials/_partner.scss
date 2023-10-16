@@ -1,0 +1,100 @@
+.patner-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 3rem 0 7rem 0;
+}
+
+
+.subscript-box{
+    background-color: #f8f7fd;
+    border-radius: 10rem 0 0 0;
+    // position: relative;
+    .subscript-box-left{
+        background-color: #ebe8fb;
+        opacity: 0.5;
+        width: 35rem;
+        height: 18rem;
+        // position: absolute;
+        margin:3rem 0 0 0  ;
+        z-index: 1;
+        margin-top: -20rem;
+        margin-left: -2rem;
+       }
+       .subscript-box-right{
+        background-color: #ebe8fb;
+        // opacity: 0.5;
+        width: 15rem;
+        height: 20rem;
+        // margin:3rem 0 0 0  ;
+        z-index: 1;
+        margin-top: -21em;
+        margin-left: 60rem;
+       }
+}
+.email{
+    width: 15rem;
+    height: 3rem;
+    padding-left: 3rem;
+    border: none;
+    outline: none;
+    z-index: 2;
+    // padding: 0.5rem;
+    background-color:$nav-background;
+    -webkit-box-shadow: 9px 5px 4px 0px rgba(199,193,199,1);
+    -moz-box-shadow: 9px 5px 4px 0px rgba(199,193,199,1);
+    box-shadow: 9px 5px 4px 0px rgb(233, 231, 233);
+    
+}
+.icon{
+    position: absolute;
+    margin-left: -26%;
+    margin-top: 1.3%;
+    z-index: 3;
+}
+.subscript-box-content{
+    margin: auto;
+    padding: 7rem;
+    p{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    form{
+        justify-content: center;
+        display: flex;
+        button{
+            background-color: $top-highlight;
+            width: 7rem;
+            margin-left:1rem ;
+            border: none;
+            border-radius: 0.5rem;
+            color: $nav-background;
+        }
+    }
+}
+
+
+@media screen and (max-width: $breakpoint) {
+    .patner-box{
+        // display: grid;
+        // grid-template-columns: repeat(2,1fr);
+        display: block;
+        >div{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .subscript-box{
+        width: 100%;
+    }
+    .subscript-box-right{
+        display: none;
+    }
+    .icon{
+        position: absolute;
+        margin-left: -60%;
+        margin-top: 3.3%;
+        z-index: 3;
+    }
+}

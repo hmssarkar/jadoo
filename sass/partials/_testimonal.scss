@@ -1,0 +1,103 @@
+.testimonal-container{
+    display: flex;
+    margin: 6rem 0 7rem 0;
+    .box1{
+        width: 50%;
+        padding:2rem 2rem 2rem 0;
+        p{
+            padding-bottom: 1rem;
+        }
+        h3{
+            font-size: 3rem;
+            color: $dark-text;
+        }
+        .testimonal-point{
+            display: flex;
+            gap: 1rem;
+            margin-top: 5rem;
+            >div{
+                width: 0.5rem;
+                height: 0.5rem;
+                background-color:#cecbcb;
+                border-radius: 50%;
+            }
+            .active{
+                background-color: $dark-text;
+            }
+        }
+    }
+}
+
+
+.t-container{
+    padding: 3rem;
+    .t-box{
+        z-index: 99;
+        width: 22rem;
+        height: 10rem;
+        background-color: $nav-background;
+        box-shadow: 10px 14px 20px 0px rgba(237,226,226,0.75);
+        -webkit-box-shadow: 10px 14px 20px 0px rgba(237,226,226,0.75);
+        -moz-box-shadow: 10px 14px 20px 0px rgba(237,226,226,0.75);
+
+        box-shadow: -11px 0px 20px 0px rgba(237,226,226,0.75);
+-webkit-box-shadow: -11px 0px 20px 0px rgba(237,226,226,0.75);
+-moz-box-shadow: -11px 0px 20px 0px rgba(237,226,226,0.75);
+    position: relative;
+    p{
+        padding: 2rem;
+
+    }
+    img{
+        position: absolute;
+        margin-top: -2rem;
+        border-radius: 50%;
+        margin-left: -2rem;
+    }
+    address{
+        margin-left: 2rem;
+        padding-bottom:1rem;
+    }
+    }
+    .t-box-2{
+        position: absolute;
+        margin-top: -8rem;
+        margin-left: 3rem;
+        z-index: 1;
+        
+    }
+}
+.m{
+    margin-top: 3px;
+}
+
+
+// new section parner
+
+
+
+// media
+@media screen and (min-width:$breakpoint) and (max-width:932px ){
+    
+}
+@media screen and (min-width: 568px) and (max-width: 1024px){
+    .t-box-2{
+        display: none;
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: $breakpoint) {
+    .testimonal-container{
+        display: block;
+        .box1{
+            margin: auto;
+        }
+    }
+    .t-box{
+        margin: auto;
+    }
+    
+}
+

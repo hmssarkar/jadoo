@@ -1,0 +1,15 @@
+
+:root{
+    --background:#282c33;
+    /* --background:#282C33; */
+    /* --background:#0d1e3d; */
+    --primary-color:#C778DD;
+    --border-color:#ABB2BF;
+    --text-color:#fff;
+}
+.dark-theme{
+    --background:#f1effa;
+    --primary-color:#C778DD;
+    --border-color:#727272;
+    --text-color:#000;
+}

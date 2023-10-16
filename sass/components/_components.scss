@@ -1,0 +1,28 @@
+.btn{
+    width: 10.625rem;
+    height: 3.75rem;
+    background-color: $link-hover-color;
+    border: none;
+    border-radius: 1rem;
+    color: $nav-background;
+    font-size: 1.065rem;
+}
+.deep-blue{
+    color: #666a87;
+}
+.button{
+    
+    width: 6.875rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    // background-color: $dark-text;
+    cursor: pointer;
+    background-color: #08080a;
+    img{
+        width: 1.7rem;
+        height: 1.7rem;
+        
+    }
+}

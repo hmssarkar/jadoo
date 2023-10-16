@@ -1,0 +1,24 @@
+@import url("base/variable.css");
+@import 'base/reset';
+
+@import 'base/variables';
+@import 'components/mixin';
+
+// @import 'base/reset';
+// @import 'components/annimation';
+
+@import 'base/main';
+
+
+@import 'partials/nav';
+@import 'partials/header';
+@import 'partials/category';
+@import 'partials/destination';
+@import 'partials/testimonal';
+@import 'partials/partner';
+@import 'partials/footer';
+@import 'components/components';
+// @import 'partials/media';
+
+
+
